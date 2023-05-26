@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Chess } from 'chess.js';
 import { createBoard } from '../../functions';
-import Board from '../Board/Board';
+import Board from '../board/Board';
 
 const FEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1';
 
