@@ -1,6 +1,6 @@
 import React from 'react';
 import './cell-styles.css';
-import { isLightSquare } from '../../functions/';
+import { isLightSquare } from '../../functions';
 
 interface CellProps {
     cell: { pos: string };

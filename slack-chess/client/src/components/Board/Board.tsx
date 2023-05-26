@@ -1,6 +1,6 @@
 import React from 'react';
 import './board-styles.css';
-import Cell from '../Cell/Cell';
+import Cell from '../cell/Cell';
 
 interface Cell {
     pos: string;
