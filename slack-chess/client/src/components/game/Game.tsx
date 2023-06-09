@@ -20,7 +20,7 @@ const Game: React.FC = () => {
     const [fen, setFen] = useState<string>(FEN);
     const { current: chess } = useRef(new Chess(fen));
     const [board, setBoard] = useState(createBoard(fen));
-    // console.log("board: ", board);
+    console.log("board: ", board);
 
     useEffect(() => {
         setBoard(createBoard(fen));

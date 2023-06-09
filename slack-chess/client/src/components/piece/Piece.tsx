@@ -2,19 +2,23 @@ import React from 'react';
 import './piece-styles.css';
 
 interface PieceProps {
-    name: string;
     pos: string;
+    name: string;
 }
 
-const Piece: React.FC<PieceProps> = ({ name, pos }) => {
+const Piece: React.FC<PieceProps> = ({ pos, name }) => {
+
+    //console.log("pos: ", pos);
+    //console.log("name: ", name);
     const color = name === name.toUpperCase() ? 'w' : 'b';
+    //console.log("name: ", name);
     const imageName = color + name.toUpperCase();
     let image;
 
     try {
         image = `../../assets/pieces/${imageName}.png`;
     } catch (error) {
-        image = '../../assets/pieces/empty.png'; //an empty fallback image
+        image = ''; //an empty fallback image
     }
 
     return (
